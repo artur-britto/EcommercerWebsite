@@ -36,3 +36,44 @@ body{
     font-weight: lighter;
     transition: color .5s;
 }
+.background-brand{
+    background-image: url("../images/pexels-mitbg000-30154483.jpg");
+}
+/*products*/
+
+.products{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.products li{
+    list-style-type: none;
+    padding: 0%;
+    float: 0 1 34rem;
+    height: 25rem;
+    border-bottom: solid .1rem #318fb5;
+    margin: 15px 10px 15px 10px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+
+.product-name{
+    font-weight: bold;
+    color: #318fb5;
+}
+.product-image{
+    max-width: 12rem;
+    max-height: 12rem;
+}
+.product-brand{
+    color: #808080;
+}
+.product.price{
+    font-weight: bold;
+}

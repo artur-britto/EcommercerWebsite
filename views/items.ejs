@@ -1,0 +1,82 @@
+<%- include('partials/header') -%>
+
+<form action="">
+    <div class="conteiner-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="card-body bg-light justify-content-center">
+            <div class="row">
+              <div class="col-lg-3">
+                <img src="../images/Image2.jpg" style="display: inline-block; height: 15rem; width: 15rem;" alt="">
+                <div class="p-4 text-center">
+                  <div class="row">
+                    <div class="col-6">
+                      <button type="submit" id="edit" class="btn btn-warning py-2">Edit</button>
+                    </div>
+                    <div class="col-6">
+                      <button type="submit" disabled id="nextSumit" class="btn p-2 f btn-warning py-2">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="name">Product Name</label>
+                    <div class="input-group mb-3">
+                      <input type="text" value="Johnson" name="name" disabled class="form-control f" id="nextSumit">
+                    </div>
+                    <label for="name">Product Description</label>
+                    <div class="input-group mb-3">
+                      <input type="text"  value="lorem" name="name" disabled class="form-control f" id="nextSumit">
+                    </div>
+                    <label for="name">Product Category</label>
+                    <div class="input-group mb-3">
+                      <input type="text" value="shampoo" name="name" disabled class="form-control f" id="nextSumit">
+                    </div>
+                    <label for="name">Product Brand</label>
+                    <div class="input-group mb-3">
+                      <input type="text" value="Jhonson" name="name" disabled class="form-control f" id="nextSumit">
+                    </div>
+                    
+                  </div>
+                  <div class="col-6">
+                    <label for="name">Product Quantiy</label>
+                    <div class="input-group mb-3">
+                      <input type="text" value="20" name="name" disabled class="form-control f" id="nextSumit">
+                    </div>
+                    <label for="name">Product Price</label>
+                    <div class="input-group mb-3">
+                      <input type="text" value="$25" name="name" disabled class="form-control f" id="nextSumit">
+                    </div>
+                    <label for="name">Product Size</label>
+                    <div class="input-group mb-3">
+                      <input type="text" value="300ml" name="name" disabled class="form-control f" id="nextSumit">
+                    </div>
+                    <label for="name">Product Image</label>
+                    <div class="input-group mb-3">
+                      <input type="text" value="../images/image1.jpg" name="name" disabled class="form-control f" id="nextSumit">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#edit").click(function(){
+        $(".f").removeAttr("disabled")
+      });
+      $("#subimit").click(function(){
+        $("#nextSumit").attr("disable", "disable");
+      })
+    })
+  
+  </script>
+
+<%- include('partials/footer') -%>
